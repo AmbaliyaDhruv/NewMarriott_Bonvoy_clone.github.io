@@ -1,0 +1,197 @@
+
+    *{
+        font-family: 'Poppins', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    }
+body{
+    background-color: rgb(244, 244, 244);
+}
+#container{
+    /* border: 2px solid red; */
+  padding: 5% 10% 5% 10%;
+
+  
+}
+
+/* ----------------- style for big dive of all------------------- */
+
+#main p{
+    /* border: 2px solid red; */
+    color: rgb(235, 98, 34);
+}
+/* ----------------------style for second big div---------------- */
+#main>div{
+    border: 1px solid rgb(156, 150, 150);
+    height: 640px;
+    padding: 1% 1% 1% 1% ;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+#main>div>div:nth-child(1){
+/* border: 2px solid rgb(37, 32, 32); */
+    border-bottom: 1px solid rgb(168, 164, 164);
+    gap: 3%;
+    height: 300px;
+}
+#main>div>div:nth-child(2){
+    /* background-color: rgb(122, 120, 124); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+   
+    /* gap: 1%; */
+}
+#main>div>div:nth-child(2)>div{
+display: flex;
+justify-content: center;
+/* background-color: red; */
+align-items: center;
+align-content: center;
+flex-flow: column;
+
+}
+#main>div>div:nth-child(2)>div:nth-child(2){
+    overflow: hidden;
+    /* height: 60%; */
+    height: 95%;
+    width: 60%;
+}
+#main>div>div:nth-child(2)>div:nth-child(2)>img{
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    border: 8px solid rgb(167, 157, 157);
+    padding: 3px;
+    background-color: cadetblue;
+    animation: 2s work ease infinite;
+    
+    right: 0%;
+    /* position: relative; */
+    
+    
+   
+}
+#main>div>div:nth-child(2)>div:nth-child(1)>img{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+  
+}
+#main>div>div:nth-child(2)>div:nth-child(3)>img{
+width: 60px;
+height: 60px;
+background-color: white;
+}
+#main>div>div:nth-child(2)>div:nth-child(1)>img:hover{
+    background-color: rgb(190, 172, 169);
+    cursor: pointer;
+    
+}
+#main>div>div:nth-child(2)>div:nth-child(3)>img:hover{
+    background-color: rgb(190, 172, 169);
+    cursor: pointer;
+    
+}
+#main>div>div:nth-child(2)>div:nth-child(1)>img:active{
+    background-color: lightslategrey;
+}
+#main>div>div:nth-child(2)>div:nth-child(3)>img:active{
+    background-color: lightslategrey;
+}
+#main>div>div>div{
+    /* border: 2px solid red; */
+    /* background-color: sienna; */
+    display: flex;
+    padding-right: 5%;
+}
+/* style for top 3 main father div  */
+#main>div>div>div:nth-child(1){
+ display: grid;
+ grid-template-columns: 30% 50% 20%;
+    /* border: 2px solid rgb(139, 99, 99); */
+    grid-column-gap: 15px;
+
+    height: 230px;
+}
+#main>div>div>div:nth-child(1)>div{
+    /* border: 2px solid red; */
+    height: 228px;
+}
+#main>div>div>div:nth-child(1)>div:nth-child(3){
+    margin-top: 60px;
+    height: 80px;
+    background-color: rgb(230, 226, 225);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main>div>div>div:nth-child(2){
+justify-content: right;
+gap: 10%;
+padding-right: 10%;
+align-items: center;
+}
+/* style for viwer rate  */
+#main>div>div>div:nth-child(2)>div:nth-child(2){
+    background-color: rgb(59, 58, 63);
+    padding-left: 1%;
+    padding-right: 1%;
+    color: white;
+    margin-top: -10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+}
+#main>div>div>div:nth-child(2)>div:nth-child(2):hover{
+    background-color: rgb(74, 81, 87);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+#main>div>div>div>div:nth-child(2)>div{
+    display: flex;
+    justify-content: space-around;
+    
+    border: 0.5px solid rgb(218, 213, 213);
+}
+#main>div>div>div:nth-child(1)>div>img{
+    width: 100%;
+    height: 100%;
+}
+
+h2:hover{
+cursor: pointer;
+}
+p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+td:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+th:hover{
+    cursor: pointer;
+}
+h1{
+    margin-top: 5px;
+}
+h1:hover{
+cursor: pointer;
+text-decoration: underline;
+}
+@keyframes work{
+
+ 0%{
+     right: 100%;
+ }
+ 5%{
+     right: 0.1%;
+ }
+ 100%{
+     right: 0%;
+ }
+
+}
