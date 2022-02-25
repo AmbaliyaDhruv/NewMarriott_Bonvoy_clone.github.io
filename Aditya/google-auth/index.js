@@ -16,7 +16,7 @@ function isLoggedIn(req, res, next) {
     // cookie: { secure: true }
   }))
 
-  app.use(passport.initialize());
+app.use(passport.initialize());
 app.use(passport.session());
 
 
