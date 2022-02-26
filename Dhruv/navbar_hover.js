@@ -272,7 +272,7 @@ function siginOn(){
     
                     <p class="last-p">Forgot password</p>
                     <p class="last-p" id="create_account" onclick="createOn()">Activate online account</p>
-                    <div onclick="google()"><img id="fb-logo" src="https://i.stack.imgur.com/LKMP7.png" alt=""></div>
+                  
                     
                 </form>
             </div>
@@ -302,16 +302,7 @@ function siginOn(){
 
     }
 
-   async function google(){
-        // <a href="<a href="http://localhost:5000/auth/google">"></a>
-        try {
-            let res=await fetch("http://localhost:5000/auth/google")
-            let data=await res.json();
-            console.log(data);
-        } catch (error) {
-            console.log(error.message)
-        }
-    }
+
 
     function removeOn(){
         siginbox.innerHTML=null;
@@ -326,7 +317,7 @@ function siginOn(){
             <div class="cross" onclick="removeOn()">x</div>
             <p class ="welcome">Join Marriott Bonvoy</p>
             <p class="sign-letter">Free Wi-Fi, Mobile check-in</p>
-            <img id="sign-logo" src="https://i.stack.imgur.com/oL5c2.png" alt="logo">
+           
             <form onsubmit="Register(event)">
                 <!-- <h1>Register</h1>
                 <br> -->
