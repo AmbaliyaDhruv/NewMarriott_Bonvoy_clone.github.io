@@ -389,7 +389,7 @@ async function Register(event){
         description:document.querySelector("#name2").value,
     }
     regiobj=JSON.stringify(regiobj);
-
+    document.querySelector("#waiting").style.display="block";
 
     try{
           let url='https://marriott-bonvoy.herokuapp.com/Register'
@@ -409,12 +409,15 @@ async function Register(event){
         document.querySelector("#pass").value=null
         document.querySelector("#num").value=null
         document.querySelector("#name2").value=null
+        document.querySelector("#waiting").style.display="none";
         alert("Registration Successful");
+
         siginOn()
        
     }
     catch(er){
         console.log("Register side",er.message)
+        document.querySelector("#waiting").style.display="none";
         alert("Registration failed,user already exists");
         document.querySelector("#name1").value=null
         document.querySelector("#email").value=null
