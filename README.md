@@ -18,6 +18,8 @@ Firstly we noted all the difficulties we might face in the project and worked on
 ## Roles and responsibilities of team members
 Aditya Raj worked on google OAuth, Dhruv worked on the homepage and made an API for sign in and sign up pages, I worked on the payment page and created an API to fetch the data of hotels based on search results, Shailendra worked on the mobile responsiveness of the entire website, find hotels page and filtering functionalities, Shiva worked on UI of vacation page, Devesh worked on a database of vacation page.
 ## Some snapshots of our cloned website…
+### Database
+![Screenshot (382)](https://user-images.githubusercontent.com/96105500/158130260-241d3695-39c2-4ce0-80e8-949d73d8899c.png)
 ### Landing Page 
 ![Screenshot 2022-01-22 102413](https://user-images.githubusercontent.com/96105500/158127155-6f7bbed7-7bc6-4685-8208-b0768447016f.png)
 ![Screenshot 2022-01-22 102518](https://user-images.githubusercontent.com/96105500/158127259-526665a8-66d8-41ec-afbb-d1d7575dff62.png)
