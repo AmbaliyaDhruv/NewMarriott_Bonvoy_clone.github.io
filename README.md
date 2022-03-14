@@ -23,7 +23,7 @@ Aditya Raj worked on google OAuth, Dhruv worked on the homepage and made an API 
 ![Screenshot 2022-01-22 102518](https://user-images.githubusercontent.com/96105500/158127259-526665a8-66d8-41ec-afbb-d1d7575dff62.png)
 ![Screenshot 2022-01-22 102541](https://user-images.githubusercontent.com/96105500/158127270-d9de271e-edf3-420f-8512-f97520a29db3.png)
 
-### Singin and Login Page
+### Signin and Login Page
 ![Screenshot 2022-01-22 103720](https://user-images.githubusercontent.com/96105500/158127474-18d79b5a-e963-4d8a-9fd8-165780eedebd.png)
 
 ### Other subpages
