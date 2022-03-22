@@ -403,6 +403,7 @@ async function Register(event){
         })
 
         let data=await response.json();
+      
         document.querySelector("#name1").value=null
         document.querySelector("#email").value=null
         document.querySelector("#user").value=null
