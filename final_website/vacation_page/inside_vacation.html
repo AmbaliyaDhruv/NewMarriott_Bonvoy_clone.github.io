@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trip</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@500;800&family=Mukta:wght@200&family=Noto+Sans&family=Outfit:wght@100&family=Poppins:wght@300&family=Source+Sans+Pro:wght@300&family=Zen+Kurenaido&display=swap"
+        rel="stylesheet">
+    <title>Landing Page</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://cache.marriott.com/Images/Mobile/MC_Logos/MarriottApple57x57.png
+      " hreflang="en-in" />
+    <style>
+        img{
+          width: 100%;
+   
+        }
+         #container>div>img{
+            height: 80%;
+            width: 80%;
+           
+        }
+        #container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            text-align: center;
+        }
+        #container>div{
+            /* border: 2px solid red; */
+            margin-top: 70px;
+
+        }
+       
+    </style>
+</head>
+<body>
+ <img src="https://i.ibb.co/0QGXfJW/explore-your-destinations.png" alt="">
+    <div id="container"></div>
+</body>
+</html>
+<script>
+
+ 
+
+     
+
+    async function getdetails(){
+        try{
+            console.log("one");
+            let fetchedDetails=await  fetch("https://infinite-cove-12653.herokuapp.com/beach");  
+            let data=await fetchedDetails.json();
+            console.log("hoteldetails:",data);
+            appenddata(data);
+        }
+        catch(e){
+            console.log(e.message);
+        }
+    }
+    getdetails();
+
+
+function appenddata(data){
+    data.forEach((el)=>{
+        let p=document.createElement("h4");
+        p.textContent=el.featured_family;
+        let image= document.createElement("img");
+        image.src=el.image_Url;
+        let p1=document.createElement("h3");
+        p1.textContent=el.hotel_name;
+        let p2=document.createElement("h3");
+        p2.textContent=el.price;
+        let container=document.querySelector("#container");
+        const newDiv = document.createElement("div");
+        newDiv.append(p2,p,p1,image);
+        container.append(newDiv)
+
+    })
+}
+
+</script>

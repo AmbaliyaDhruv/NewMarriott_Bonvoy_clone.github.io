@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@500;800&family=Mukta:wght@200&family=Noto+Sans&family=Outfit:wght@100&family=Poppins:wght@300&family=Source+Sans+Pro:wght@300&family=Zen+Kurenaido&display=swap"
+        rel="stylesheet">
+    <title>Landing Page</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://cache.marriott.com/Images/Mobile/MC_Logos/MarriottApple57x57.png
+      " hreflang="en-in" />
+
+    <link rel="stylesheet" href="landing.css">
+   
+</head>
+
+<body>
+    <!-- main box of navbar -->
+
+    <!-- sign in and login page in pop box -->
+    <div id="pop">
+
+    </div>
+
+   
+
+
+    <div id="navbar">
+        <details id="main_category" class="category">
+            <summary ><img src="./index_image/5072748.png" alt=""></summary>
+            <div onclick="clickOn()">Find & Reserve</div>
+            <div onclick="clickOn2()">Vacations</div>
+            <div onclick="clickOn1()">Special Offers</div>
+            <div onclick="clickOn3()">Our Brands</div>
+            <!-- <div onclick="clickOn4()">Our Credit Card</div> -->
+            <div onclick="clickOn5()">About Marriott Bonvoy</div>
+        </details>
+        <!-- logo box -->
+        <div class="logo">
+            <img src="./index_image/logo.png" width="100%" height="100%" alt="">
+        </div>
+        <!-- catagory box -->
+        <div class="category">
+            <div onclick="clickOn()">Find & Reserve</div>
+            <div onclick="clickOn2()">Vacations</div>
+            <div onclick="clickOn1()">Special Offers</div>
+            <div onclick="clickOn3()">Our Brands</div>
+            <!-- <div onclick="clickOn4()">Our Credit Card</div> -->
+            <div onclick="clickOn5()">About Marriott Bonvoy</div>
+        </div>
+        <!-- info box like sigin ,help other -->
+        <div class="info">
+            <div><img src="./index_image/1st.png" alt="" width="50%" height="100%"><p>English</p> </div>
+            <div><img src="./index_image/2nd.png" alt="" width="50%" height="100%"><p> Help</p></div>
+            <div><img src="./index_image/3rd.png" alt="" width="50%" height="100%"><p>MyTrips</p> </div>
+            <div onclick="siginOn()" id="siginName"><img src="./index_image/8th.png" alt="" width="50%" height="100%"><p>Login</p> </div>
+            <div id="logOut" onclick="logOut()"></div>
+
+            <div></div>
+        </div>
+    </div>
+    <!-- navbar finish -->
+    <!-- button and heading top on the image & image data -->
+    <div id="mainImageBox">
+        <div id="btuimg">
+            <img src="https://cache.marriott.com/marriottassets/marriott/BDQCC/bdqcc-exterior-5133-hor-feat.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1180px:*"
+                width="100%" height="610px" alt="" class="btuing">
+            <div class="explore">
+                EXPLORE OUR BRANDS
+            </div>
+            <button class="ExMore">LEARN MORE</button>
+        </div>
+        <!-- Find Hotels section -->
+        <div id="findbox">
+            <div class="findinner">
+                <div id="waiting">
+                    <img src="https://www.synergypunching.com/images/icons/preloader.svg" width="100%" height="100%" alt="">
+                </div>
+                <div class="destination">
+                    Destination
+                    <br>
+                    <input type="text" placeholder="city,airport,attraction or address" id="HotelNameinput">
+                </div>
+                <div class="dates">
+                    Dates
+                    <br>
+                    <div id="Datesinput"> <input type="date" class="startdate">
+                        <input type="date" class="enddate">
+                    </div>
+                </div>
+                <div class="findHotels">
+                    <button id="HotelsSubmit">FIND HOTELS</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- click and show function on navbar -->
+    <div class="hoverOuter">
+
+    </div>
+    <!-- main box end -->
+    <!-- Travel with Peace of mind -->
+    <!-- start middle box in the middle box number of poster etc. -->
+    <div id="middlebox">
+        <div id="Peace">
+            <h2>Travel with Peace of Mind</h2>
+        </div>
+
+        <!-- Beat rate ,flexible , clean tag -->
+        <div id="BestRate">
+            <div><img src="./index_image/4th.png" alt="4th" width="15%"> <label for="">Beat Rate Guarantee</label> </div>
+            <div><img src="./index_image/5th.png" alt="5th" width="15%"><label for="">Flexible Cancellation</label></div>
+            <div><img src="./index_image/6th.png" alt="6th" width="19%">
+                <label for="">Commitment to Clean</label>
+            </div>
+            <div><img src="./index_image/7th.png" alt="7th" width="11%"><label for="">Contactless Services</label> </div>
+        </div>
+
+        <!-- black box -->
+        <div id="innersignin">
+            <!-- logo box -->
+            <div class="secondlogo">
+                <img src="./index_image/2nd logo.png" alt="2nd logo" width="100%" height="100%">
+            </div>
+            <!-- signin box -->
+            <div id="dhruv">
+                <div class="Note">Please enter the password for your account</div>
+                <div class="sigininner">
+                    <div class="Emailinput">
+                       Email
+                        <br>
+                        <input type="text" placeholder="dhr*****" id="Emailinput">
+                    </div>
+                    <div class="Passwordinput">
+                        Password
+                        <br>
+                        <input type="password" id="passwordinput">
+                        <div class="checkbox"><input type="checkbox" id="checkbox"> Remember me
+                        </div>
+                    </div>
+                    <div class="signinbut">
+                        <button id="signinbut" onclick="Onscreenlogin()">SIGN IN</button>
+                    </div>
+                </div>
+                <div class="Note2">
+                    <div class="forgot">Forgot password</div>&emsp;|&emsp;
+                    <div class="clear">Clear remembered account</div>
+                </div>
+               
+            </div>
+        </div>
+
+        <!-- first Poster box -->
+
+        <div id="firstPoster">
+            <div>
+                <img src="https://cache.marriott.com/marriottassets/search/homepage/tiles_2019/bonvoy-tours-activities-660x372.jpg?interpolation=progressive-bilinear&downsize=590:*"
+                    width="100%" height="73%" alt="">
+                <div class="leftsidePoster">
+                    <h3>Experience thing to do near the Courtyard</h3>
+
+                    <p class="tours">FIND TOURS & ACTIVITIES</p>
+
+                </div>
+            </div>
+            <div>
+                <img src="https://cache.marriott.com/marriottassets/search/homepage/marketing-tiles/courtyard.jpg"
+                    width="100%" height="73%" alt="">
+                <div class="rightsidePoster">
+                    <h3>Everything you need to unwind,recharge,connect and move forward</h3>
+
+                    <p class="learn">LEARN MORE</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- second Poster -->
+
+        <div id="secondPoster">
+            <!-- 1st -->
+            <div>
+                <img src="https://cache.marriott.com/marriottassets/Loyalty/credit-card/mvp/homepage/tiles/credit-card-education-660x372.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=590:*"
+                    width="100%" height="50%" alt="">
+                <div class="leftsidePoster">
+                    <h3>Marriott Bonvoy <br> Caredit Card</h3>
+
+                    <p class="tours">LEARN MORE ></p>
+
+                </div>
+            </div>
+            <!-- 2nd -->
+            <div>
+                <img src="https://cache.marriott.com/marriottassets/search/homepage/tiles_2022/Last_Minute_Ski_HVMI_01_15_22_Homepage4Pack_660x372.jpg?interpolation=progressive-bilinear&downsize=590:*"
+                    width="100%" height="50%" alt="">
+                <div class="leftsidePoster">
+                    <h3>Book A Home And Earn 2X Points</h3>
+
+                    <p class="tours">ESCAPE THIS SPRING</p>
+
+                </div>
+            </div>
+            <!-- 3rd -->
+            <div>
+                <img src="https://cache.marriott.com/marriottassets/search/homepage/tiles_2021/covid-testing-inclusion-HP4pack-660x372.jpg?interpolation=progressive-bilinear&downsize=590:*"
+                    width="100%" height="50%" alt="">
+                <div class="leftsidePoster">
+                    <h3>Complimentary testing for you trip</h3>
+
+                    <p class="tours">LEARN MORE</p>
+
+                </div>
+            </div>
+            <!-- 4th -->
+            <div>
+                <img src="https://cache.marriott.com/marriottassets/search/homepage/tiles_2021/21MB_GiftCard_Homepage4pk_BodyScrub-min.jpg?interpolation=progressive-bilinear&downsize=590:*"
+                    width="100%" height="50%" alt="">
+                <div class="leftsidePoster">
+                    <h3>Take their stay to the next level</h3>
+
+                    <p class="tours">PURCHASE A GIFT CARD ></p>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- VIEW ALL OFFERS Button -->
+
+        <div id="offersbtu">VIEW ALL OFFERS</div>
+
+        <!-- it's all right bar -->
+
+        <div id="thirdPoster">
+            <img src="https://cache.marriott.com/marriottassets/search/homepage/Joe/MBV_app3_748x332.png?interpolation=progressive-bilinear&downsize=480px:*"
+                alt="">
+            <div class="thirdPostertital">It's all right here with the Marriott Bonvoy App</div>
+            <div class="thirdPosterbtu">LEARN MORE</div>
+        </div>
+
+        <!-- fourthPoster -->
+        <div id="fourthPoster">
+            <img src="https://cache.marriott.com/marriottassets/search/homepage/banners/Career-Aries-Banner_748x332.jpg?interpolation=progressive-bilinear&downsize=748px:*"
+                width="230px" alt="">
+            <div class="fourthPostertital">Discover Career Opportunities<h6 class="fourthPostersubtital">EOE /
+                    Disability / Veteran</h6>
+            </div>
+            <div class="fourthPosterbtu">EXPLORE JOBS</div>
+        </div>
+    </div>
+    <!-- middle box end  -->
+    <!-- footer -->
+
+    <div id="footer_box">
+        <div class="footer_logo">
+            <img src="./index_image/Footer.png" width="100%" height="100%" alt="">
+        </div>
+
+        <div class="footer_cat">
+            <div>
+                <h3 class="firsth3">Marriott Bonvoy</h3>
+                <a href="">Marriott Bonvoy Overview ></a><br>
+                <a href="">Member Benefits ></a><br>
+                <a href="">Earn Points ></a><br>
+                <a href="">Redeem Points ></a><br>
+                <a href="">Marriott Bonvoy Credit Card ></a><br>
+                <a href="">Marriott Insiders ></a>
+            </div>
+            <div>
+                <h3>Meeting & Events</h3>
+                <a href="">Meetings & Events Overview ></a><br>
+                <a href="">Business Meeting ></a><br>
+                <a href="">Weddings ></a><br>
+                <a href="">Social Events ></a><br>
+                <a href="">Group Travel ></a><br>
+
+            </div>
+            <div>
+                <h3>Deals & Packages</h3>
+                <a href="">Deals ></a><br>
+                <a href="">Hotel & Flight Packages ></a><br>
+                <a href="">Cars,Tours,Activities ></a><br>
+                <a href="">All-Inclusive Resorts & Vacations ></a><br>
+                <a href="">Travel Experiences ></a><br>
+                <a href="">The Ritz-Carlton Yacht Collection ></a><br>
+                <a href="">Resorts ></a><br>
+                <a href="">Marriott Bonvoy Traveler ></a><br>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="footer_end">
+        <div class="end_box">
+
+            <div onclick="footer_pop1()" class="ftbox1">Top Destinations</div>
+            <div class="footer_pop1">Anaheim Hotels > Atlanta Hotels > Baltimore Hotels >  Boston Hotels >  Cancun Hotels > Charlotte Hotels >  Chicago Hotels > Costa Rica Hotels > Dallas Hotels >  Las Vegas Hotels > London Hotels > Los Angeles Hotels > Memphis Hotels > Miami Hotels > Myrtle Beach Hotels > New York Hotels >  Orlando Hotels >  Paris Hotels > Philadelphia Hotels > San Francisco Hotels > St. Louis Hotels > Tampa Hotels > Thailand Hotels > Toronto Hotels > Washington DC Hotels ></div>
+
+
+            <hr>
+            <div onclick="footer_pop2()" class="ftbox1">Our Guests</div>
+            <div class="footer_pop2">Best Rate Guarantee > Marriott Bonvoy Moments > Activities > Marriott Insiders > Marriott Bonvoy Traveler > Travel Experiences > Travel Insurance > Shop Marriott > Shop Westin > Gift Cards ></div>
+            <hr>
+            <div onclick="footer_pop3()" class="ftbox1">Our Company</div>
+            <div class="footer_pop3">
+                About Marriott > Careers > Travel Professionals > Group Partners > Developers > Affiliates > Investors > News >  Bill Marriott's Blog >  Anthony Capuano's Blog > Heart of the House
+            </div>
+            <hr>
+            <div class="ftbox1">Follow us :</div>
+            
+            <br>
+            <br>
+            <div class="endabout">
+            1996-2022 Marriott International,Inc.All right reserved.Marriott Proprietary Information
+            <br>
+            Tracking Preferences > . Careers > . Terms of Use > . Program Terms & Conditions > . Privacy Center > . Do
+            Not Sell My Personal Information > . Digital Accessibility > . Site Map > . Help>
+            <br>
+            <br>
+            <br>
+            prod8,0AE9C746-B671-587C-8853-3BC4BFC35467,rel-R22.1.2
+        </div>
+        </div>
+    </div>
+
+
+    <!-- <div id="check"></div> -->
+
+
+
+</body>
+
+</html>
+
+<script src="navbar_hover.js"></script>

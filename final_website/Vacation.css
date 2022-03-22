@@ -1,0 +1,311 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    margin:0%;
+}
+
+/* navbar start here */
+.navtop {
+    height: 40px;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    background-color: rgb(19, 18, 18);
+    padding-top: 15px;
+}
+
+.logo {
+    height: 100%;
+    width: 70%;
+    /* border: 2px solid yellow; */
+    margin-left: 200px;
+}
+
+.signINorjoin {
+    height: 100%;
+
+    /* border:  2px solid green; */
+
+}
+
+.signINorjoin>a {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+
+}
+
+.navdown {
+    height: 20px;
+
+    /* border: 2px solid red; */
+    background-color: rgb(19, 18, 18);
+    display: flex;
+    padding: 20px;
+}
+
+.leftpart {
+    margin-left: 170px;
+    width: 80%;
+}
+
+.leftpart>a {
+    font-size: 20px;
+    text-transform: none;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    
+ 
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* navbar end here */
+
+/* trip_looking part css start here */
+.trip_looking {
+    height: 300px;
+    /* border: 2px solid red; */
+    font-size: 30px;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding-top: 30px;
+}
+
+.looking_places {
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid green; */
+
+}
+
+.item>a>img {
+
+    transition: transform .9s;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    border-radius: 35px;
+
+}
+
+.item>a>img:hover {
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+    -webkit-transform: scale(1.2);
+    /* Safari 3-8 */
+    transform: scale(1.2);
+}
+
+.container1 {
+    height: 500px;
+    cursor: pointer;
+    /* border: 2px solid red; */
+}
+
+.container1>img {
+    height: 100%;
+    width: 100%;
+}
+
+/* trip_looking part css End here */
+
+/* home_villas css part start here */
+
+.home_villas {
+    height: 700px;
+    /* border: 2px solid red; */
+    margin-top: 50px;
+}
+
+.home_villas_logo {
+    /* border: 2px solid red; */
+    display: grid;
+    justify-content: center;
+}
+
+.home_villas_header {
+    text-align: center;
+}
+
+.home_villes_card {
+    /* border: 2px solid green; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 80px;
+    grid-gap: 25px;
+}
+
+.home_villes_card>div>img {
+    height: 350px;
+    width: 100%;
+    border-radius: 60px;
+    padding: 20px;
+}
+
+.card1-container {
+    position: relative;
+    transition: transform .7s;
+      
+
+}
+
+.home_villes_card>:hover {
+
+    -ms-transform: scale(1.1);
+ 
+    -webkit-transform: scale(1.1);
+  
+    transform: scale(1.1);
+}
+
+
+
+.text-block {
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    color: white;
+
+}
+
+/* home_villas css part end here */
+
+/* <!-- pop_out section start here --> */
+#pop_out {
+    height: 380px;
+    width: 80%;
+    padding: 50px;
+    margin: auto;
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#pop_out>div {
+    height: 100%;
+    width: 80%;
+    line-height: 201%;
+}
+
+#pop_out>div>button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 20px;
+}
+
+.featured-container {
+    margin-bottom: 50px;
+
+    width: 100%;
+    margin-top: 50px;
+}
+
+.featured-container>img {
+    width: 100%;
+}
+
+
+/* <!-- pop_out section end here --> */
+
+
+/* travel_stories part start here */
+
+.travel_story {
+    height: 400px;
+    width: 90%;
+    border: 2px solid red;
+    margin: auto;
+
+}
+
+.travel_storii {
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 3%;
+}
+
+.travel_stories_logo {
+    height: 520px;
+    width: 450px;
+}
+
+.travel_stories_logo>img {
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    margin-left: 100px;
+   
+}
+
+.travel_stories_via>button {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    width: 100px;
+}
+
+/* travel_stories css part end here */
+
+.big_saving{
+    height: 500px;
+    width: 90%;
+    margin: auto;
+    padding-top: 10px;
+    /* border: 2px solid red; */
+    margin: 50px;
+   text-align: center;    
+   
+}
+.big_saving_div{
+    display: flex;
+   grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+  width: 70%;
+  margin: 50px auto;
+    /* border: 2px solid rgb(0, 236, 106); */
+  
+}
+ .image{
+     height:350px;
+     width:300px;
+     /* border: 2px solid rgb(0, 236, 106); */
+     overflow: hidden;
+     border-radius: 30px;
+     
+     
+ }
+ .image>img{
+     height: 350px;
+     width: 300px;
+     /* border: 2px solid rgb(0, 236, 106); */
+     transition: all 2s ease;
+ }
+ .image img:hover {
+    width: 350px;
+    height: 400px;
+  }
+
+  /* footer css start here */
+  .vacation_footer{
+      height: 400px;
+ 
+     text-align: center;
+     width: 100%;
+  }
+  .vacation_footer img{
+      height: 100%;
+      width: 100%;
+      cursor: pointer;
+  }

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindHotels</title>
+    <link rel="stylesheet" href="/style/FindHotels page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@500;800&family=Mukta:wght@200&family=Noto+Sans&family=Outfit:wght@100&family=Poppins:wght@300&family=Source+Sans+Pro:wght@300&family=Zen+Kurenaido&display=swap"
+        rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="https://cache.marriott.com/Images/Mobile/MC_Logos/MarriottApple57x57.png
+        " hreflang="en-in" />
+        
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+android:maxSdkVersion="18" />
+<uses-permission android:name="android.permission.INTERNET" />
+</head>
+<body>
+    <!-- ----------------------------movendhan--------------------------- -->
+    <div id="navbar">
+         <a id="menu" href="/index.html">Home</a>
+            <div class="flex"  > 
+            <div ><img  src="/images/1st.png" alt="" width="30px" height="30px"><p>English</p>  </div>
+            <div ><img  src="/images/2nd.png" alt="" width="30px" height="30px"> <p>Help</p> </div>
+            <div ><img  src="/images/3rd.png" alt="" width="30px" height="30px"><p>My Trips</p> </div>
+            <div id="user"><img src="/images/8th.png" alt="" width="39px" height="37px" ><p>Login </p> </div>
+            <div ><img src="/images/2nd logo.png" alt=""  width="90px" height="49px"  ></div>
+        </div>
+    </div>
+   
+    <!-- nav done-->
+    <!---2nd box start-->
+    <div class="head-cont">
+        <div id="hide_dest">
+            <p>Destination</p>
+            <div class="effect" id="desti"></div>
+        </div>
+        <div >
+            <p>Stay Dates</p>
+            <div class="effect" id="checkdate"></div>
+        </div>
+        <div class="margin">
+            <p>Rooms & Guests</p>
+            <div class="effect">1Room:1Adult/Room</div>
+        </div>
+        <div class="button">
+            <button>EDIT</button>
+        </div>
+    </div>
+    <!--2nd box done-->
+    <!--3rd box start-->
+    <div id="middle_div">
+
+      <div class="middle_left_div">
+          <div class="map_img"><img  src="/images/map.png" width="30px" height="30px"alt="">Map viwe</div>
+          <div class="currency_div">
+              <label class="same" for="">Currency</label>
+              <select class="same">
+                <option value="Default">INR</option>
+                <option value="USD">USD</option>
+                <option value="AUD">AUD</option>
+                <option value="">CAD</option>
+                <option value="">AUR</option>
+                <option value="">GBP</option>
+                <option value="">HKD</option>
+                <option value="">JPY</option>
+                <option value="">MXN</option>
+                <option value="">KLN</option>
+                <option value="">OPB</option>
+                <option value="">ACD</option>
+                <option value="">ZPO</option>
+                </select>
+            </div>
+
+
+
+            <div class="sort_by_distance_div">
+              <label for="">Sort by Distance</label>
+              <select>
+                <option value="Distance">Distance</option>
+                <option value="">Reward Point</option>
+                <option value="">City</option>
+                <option value="">Brand</option>
+                <option value="">Guest Rating</option>
+                <option value="">Number of Reviews</option>
+                </select>
+            </div>
+          </div>
+
+          <div class="middle_right_div">
+            <div class="unique_barnd_div">30 UNIQUE BRANDS</div>
+              <div class="filter_by_brand">
+                   <label for="">filter by:</label>
+                   <select name="" id="">
+                       <option value="">brand</option>
+                   </select>
+                   <select>
+                   <option value="">price</option>
+                    <option value="USD">USD</option>
+                    <option value="AUD">AUD</option>
+                    <option value="">CAD</option>
+                    <option value="">AUR</option>
+                    <option value="">GBP</option>
+                    <option value="">HKD</option>
+                    <option value="">JPY</option>
+                    <option value="">MXN</option>
+                    <option value="">KLN</option>
+                   </select>
+            </div>
+           
+            <div class="all_filters">
+                <img src="https://cdn0.iconfinder.com/data/icons/social-productivity-line-art-1/128/filter-3-256.png" width="15vw" alt="">
+                <label class="same" for="">All filters</label>
+                <select>
+                    <option value="Distance">Default</option>
+                    <option value="">Reward Point</option>
+                    <option value="">City</option>
+                    <option value="">Brand</option>
+                    <option value="">Guest Rating</option>
+                    
+                </select>
+              </div>
+         </div>
+    
+    </div>
+
+    <!-- ------------------------------------movendhan-------------------------- -->
+    <div id="container">
+        <div id="filter">
+            <div id="for_filter" >
+                <h3 >Try these filters::</h3>
+                <button id="fit" >Fitness center</button>
+                <button id="bre">Free breakfast</button>
+                <button id="kit">Kitchen</button>
+                <button id="pool">Pool</button>
+                <button id="rest">Restaurant on Site</button>
+                <select name="" id="sorting"  >
+                    <option value="">Sort by price</option>
+                    <option value="low">low to high</option>
+                    <option value="high">high to low</option>
+                    
+                </select>
+            </div>
+            <div id="for_guest">
+                <!-- -------------------------------------- -->
+                
+                <div id="gest_per_room">
+                    <p>Guests/room(max 8)</p>
+                    <label for="">Adult</label>
+                <select name="" id="adult" >
+                    
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                 </select>
+
+                 <label for="">Child</label>
+                 <select name="" id="chaild" >
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                  </select>
+                </div>
+
+                <!-- --------------------------------------------------- -->
+                <label for="">Room</label>
+                <input  type="number" id="room" placeholder="Room" > 
+                <!-- _____________________________________________________ -->
+                 <label for="">Days</label>
+                 <input  type="number" id="day" placeholder="Days" >
+                
+            </div>
+        </div>
+        <div id="waiting">
+            <img src="https://www.synergypunching.com/images/icons/preloader.svg" width="100%" height="100%" alt="">
+        </div>
+        <div id="main"></div>
+    </div>
+
+
+    <!-- ---------------------------------------------------------------------------------movendhan footer---------------------------- -->
+    <div id="foot_main">
+        <div id="st_container" class="foot-column flex">
+            <img  src="https://cache.marriott.com/marriottassets/search/homepage/Joe/MBV_app3_748x332.png?interpolation=progressive-bilinear&downsize=190px:*" alt="">
+            <h2>It's all right here with the Marriott Bonvoy™ App</h2>
+            <button>LEARN MORE
+                <img style="width:17px" src="https://cdn-icons.flaticon.com/png/512/5803/premium/5803788.png?token=exp=1642600486~hmac=ceb9df9c54e28a64a828d5c79038eb00" alt="">
+            </button>
+        </div>
+          
+          <div class="foot-column">
+              <div style="border-bottom: 1px solid gray;">
+                  <select  >
+                      <optgroup label="marriott">
+                      <option>Top Destinations</option>
+                          <option>Anaheim Hotels-></option>
+                          <option> Atlanta Hotels-></option>
+                          <option value=""> Baltimore Hotels-></option>
+                          <option value=" Boston Hotels"> Boston Hotels-></option>
+                          <option value=" Cancun Hotels"> Cancun Hotels-></option>
+                          <option value="Charlotte Hotels">Charlotte Hotels-></option>
+                          <option value=" Chicago Hotels"> Chicago Hotels-></option>
+                          <option value=" Costa Rica Hotels"> Costa Rica Hotels-></option>
+                          <option value="Dalla Hotel">Dalla Hotel-></option>
+                      </optgroup>
+                      <optgroup label="marriott-2" class="lab">
+                          <option>Los vegas Hotels-></option>
+                          <option>London Hotels-></option>
+                          <option>Los Angeles Hotels-></option>
+                          <option value="">Memphis Hotels-></option>
+                          <option value="">Miami Hotels-></option>
+                          <option value=""> Myrtle Beach Hotels-></option>
+                          <option value=""> New York Hotels-></option>
+                          <option value="">Shop Mariott-></option>
+                      </optgroup>
+                      <optgroup label="marriott-3" class="lab">
+                          <option>Los vegas Hotels-></option>
+                          <option>London Hotels-></option>
+                          <option>Los Angeles Hotels-></option>
+                          <option value="">Memphis Hotels-></option>
+                          <option value="">Miami Hotels-></option>
+                          <option value=""> Myrtle Beach Hotels-></option>
+                          <option value=""> New York Hotels-></option>
+                          <option value="">Shop Mariott-></option>
+                      </optgroup>
+                  </select>
+                  
+              </div>
+              <div style="border-bottom: 1px solid gray;">
+              <select style="border:none;">
+                  <optgroup label="marriott">
+                  <option>Our Guests<img class="size" src="https://cdn.icon-icons.com/icons2/1132/PNG/128/1486348525-music-forward-front-next-arrow_80457.png" alt=""></option></h3>
+                      <option>Anaheim Hotels-></option>
+                      <option> Atlanta Hotels-></option>
+                      <option value=""> Baltimore Hotels-></option>
+                      <option value=" Boston Hotels"> Boston Hotels-></option>
+                      <option value=" Cancun Hotels"> Cancun Hotels-></option>
+                      <option value="Charlotte Hotels">Charlotte Hotels-></option>
+                      <option value=" Chicago Hotels"> Chicago Hotels-></option>
+                      <option value=" Costa Rica Hotels"> Costa Rica Hotels-></option>
+                      <option value="Dalla Hotel">Dalla Hotel-></option>
+                  </optgroup>
+                  <optgroup label="marriott-2" class="lab">
+                      <option>Los vegas Hotels-></option>
+                      <option>London Hotels-></option>
+                      <option>Los Angeles Hotels-></option>
+                      <option value="">Memphis Hotels-></option>
+                      <option value="">Miami Hotels-></option>
+                      <option value=""> Myrtle Beach Hotels-></option>
+                      <option value=""> New York Hotels-></option>
+                      <option value="">Shop Mariott-></option>
+                  </optgroup>
+                  <optgroup label="marriott-3" class="lab">
+                      <option>Los vegas Hotels-></option>
+                      <option>London Hotels-></option>
+                      <option>Los Angeles Hotels-></option>
+                      <option value="">Memphis Hotels-></option>
+                      <option value="">Miami Hotels-></option>
+                      <option value=""> Myrtle Beach Hotels-></option>
+                      <option value=""> New York Hotels-></option>
+                      <option value="">Shop Mariott-></option>
+                  </optgroup>
+              </select>
+            </div>
+              <div style="border-bottom: 1px solid gray;">
+               
+                  <select style="border:none;">
+                      <optgroup label="marriott">
+                      <option>Our Company<img class="size" src="https://cdn.icon-icons.com/icons2/1132/PNG/128/1486348525-music-forward-front-next-arrow_80457.png" alt=""></option></h3>
+                          <option>Anaheim Hotels-></option>
+                          <option> Atlanta Hotels-></option>
+                          <option value=""> Baltimore Hotels-></option>
+                          <option value=" Boston Hotels"> Boston Hotels-></option>
+                          <option value=" Cancun Hotels"> Cancun Hotels-></option>
+                          <option value="Charlotte Hotels">Charlotte Hotels-></option>
+                          <option value=" Chicago Hotels"> Chicago Hotels-></option>
+                          <option value=" Costa Rica Hotels"> Costa Rica Hotels-></option>
+                          <option value="Dalla Hotel">Dalla Hotel-></option>
+                      </optgroup>
+                      <optgroup label="marriott-2" class="lab">
+                          <option>Los vegas Hotels-></option>
+                          <option>London Hotels-></option>
+                          <option>Los Angeles Hotels-></option>
+                          <option value="">Memphis Hotels-></option>
+                          <option value="">Miami Hotels-></option>
+                          <option value=""> Myrtle Beach Hotels-></option>
+                          <option value=""> New York Hotels-></option>
+                          <option value="">Shop Mariott-></option>
+                      </optgroup>
+                      <optgroup label="marriott-3" class="lab">
+                          <option>Los vegas Hotels-></option>
+                          <option>London Hotels-></option>
+                          <option>Los Angeles Hotels-></option>
+                          <option value="">Memphis Hotels-></option>
+                          <option value="">Miami Hotels-></option>
+                          <option value=""> Myrtle Beach Hotels-></option>
+                          <option value=""> New York Hotels-></option>
+                          <option value="">Shop Mariott-></option>
+                      </optgroup>
+                  </select>
+                  <!-- <div class="dino-select"></div> -->
+              </div>
+              <div>
+              
+                  <br>
+                  <div class="footer-col">
+                      <ul>
+                  
+                          <div style="display:flex;gap:20px;margin-top: 20px;cursor: grab;">
+                              <h3 style="margin: 0px;padding: 0px;">Follow Us:</h3>
+                              <img src="/images/insta.svg" alt="facebook" style="width:24px;"/>
+                              <img src="/images/pin.svg" alt="facebook" style="width:24px;"/>
+                              <img src="/images/twitter.svg" alt="facebook" style="width:24px;"/>
+                              <img src="/images/fb.svg" alt="facebook" style="width:24px;"/>
+                              <img  style="width:35px;height:25px;margin-top: 10px;" src="data:image/png;base64,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" alt="">
+                          </div>
+                      <ul>
+                  </div>
+              </div>
+              <br>
+            <div id="globe">
+              <div>
+                  © 1996 – 2021  Marriott International, Inc. All rights reserved. Marriott Proprietary Information
+              </div>
+              <div class="flex">
+                  <img style="width:30px;height:30px;" src="https://as2.ftcdn.net/v2/jpg/01/25/64/79/1000_F_125647925_sEwC9GDYtLW9BmLA5wXnG9G6iX0w0X4j.jpg" alt="">
+                    <p>English</p>
+              </div>
+            </div>
+              <br>
+              <div id="last">
+  
+                  <div class="flex">Tracking Preferences
+                   <img src="https://cdn.icon-icons.com/icons2/1132/PNG/128/1486348525-music-forward-front-next-arrow_80457.png" alt="">
+                   <div style="font-size:20px">.</div>
+                  </div>
+                  <div >Careers
+                      <img src="https://cdn.icon-icons.com/icons2/1132/PNG/128/1486348525-music-forward-front-next-arrow_80457.png" alt="">
+                      <div style="font-size:25px">.</div>
+                     </div>
+                     <div class="flex">Terms Of Use
+                      <img src="https://cdn.icon-icons.com/icons2/1132/PNG/128/1486348525-music-forward-front-next-arrow_80457.png" alt="">
+                      <div style="font-size:20px">.</div>
+                     </div>
+                     <div class="flex">Terms of Conditions
+                      <img src="https://cdn.icon-icons.com/icons2/1132/PNG/128/1486348525-music-forward-front-next-arrow_80457.png" alt="">
+                      <div style="font-size:20px">.</div>
+                     </div>
+                     <div class="flex">Privacy Center
+                      <img src="https://cdn.icon-icons.com/icons2/1132/PNG/128/1486348525-music-forward-front-next-arrow_80457.png" alt="">
+                      <div style="font-size:20px">.</div>
+                     </div>
+                     <div class="flex">  Digital Accessibility
+                      <img src="https://cdn.icon-icons.com/icons2/1132/PNG/128/1486348525-music-forward-front-next-arrow_80457.png" alt="">
+                      <div style="font-size:20px">.</div>
+                     </div>
+                     <div class="flex">Site Map
+                      <img src="https://cdn.icon-icons.com/icons2/1132/PNG/128/1486348525-music-forward-front-next-arrow_80457.png" alt="">
+                      <div style="font-size:20px">.</div>
+                     </div>
+                     <div class="flex">Tracking Preferences
+                      <img src="https://cdn.icon-icons.com/icons2/1132/PNG/128/1486348525-music-forward-front-next-arrow_80457.png" alt="">
+                      <div style="font-size:20px">.</div>
+                     </div>
+                 
+              </div>
+              <div class="flex">help
+                  <img style=" width:15px;" src="https://cdn.icon-icons.com/icons2/1132/PNG/128/1486348525-music-forward-front-next-arrow_80457.png" alt="">
+                  <div style="font-size:20px">.</div>
+                 </div>
+              <div>
+                  <br>
+                  <br>
+                  prod9,426DB412-2CB0-58DE-B7F4-6BA0799FBE92,rel-R22.1.2
+              </div>
+          </div>
+      </div>
+
+</body>
+</html>
+<script src="/scripts/FindHotels page.js"  type="module">
+  
+ 
+
+
+
+</script>

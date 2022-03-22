@@ -1,0 +1,344 @@
+
+    *{
+        font-family: 'Poppins', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    }
+body{
+    background-color: rgb(244, 244, 244);
+}
+#container{
+    /* border: 2px solid red; */
+  padding: 5% 10% 5% 10%;
+
+  
+}
+
+/* ----------------- style for big dive of all------------------- */
+
+#main p{
+    /* border: 2px solid red; */
+    color: rgb(235, 98, 34);
+    font-size: 1vw;
+}
+/* ----------------------style for second big div---------------- */
+#main>div{
+    border: 1px solid rgb(156, 150, 150);
+    height: 640px;
+    padding: 1% 1% 1% 1% ;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+#main>div>div:nth-child(1){
+/* border: 2px solid rgb(37, 32, 32); */
+    border-bottom: 1px solid rgb(168, 164, 164);
+    gap: 3%;
+    height: 300px;
+}
+#main>div>div:nth-child(2){
+    /* background-color: rgb(122, 120, 124); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+   
+    /* gap: 1%; */
+}
+#main>div>div:nth-child(2)>div{
+display: flex;
+justify-content: center;
+/* background-color: red; */
+align-items: center;
+align-content: center;
+flex-flow: column;
+    
+
+
+}
+#main>div>div:nth-child(2)>div:nth-child(2){
+    overflow: hidden;
+    /* height: 60%; */
+    height: 95%;
+    width: 60%;
+}
+#main>div>div:nth-child(2)>div:nth-child(2)>img{
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    border: 8px solid rgb(167, 157, 157);
+    padding: 3px;
+    background-color: cadetblue;
+    /* animation: 2s work ease ; */
+    /* right: 20px;
+    transition: 10ms ease-in; */
+    
+    
+    /* position: relative; */
+    
+   
+}
+#main>div>div:nth-child(2)>div:nth-child(1)>img{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    
+  
+}
+#main>div>div:nth-child(2)>div:nth-child(3)>img{
+width: 60px;
+height: 60px;
+background-color: white;
+}
+#main>div>div:nth-child(2)>div:nth-child(1)>img:hover{
+    background-color: rgb(190, 172, 169);
+    cursor: pointer;
+    
+}
+#main>div>div:nth-child(2)>div:nth-child(3)>img:hover{
+    background-color: rgb(190, 172, 169);
+    cursor: pointer;
+    
+}
+#main>div>div:nth-child(2)>div:nth-child(1)>img:active{
+    background-color: lightslategrey;
+}
+#main>div>div:nth-child(2)>div:nth-child(3)>img:active{
+    background-color: lightslategrey;
+}
+#main>div>div>div{
+    /* border: 2px solid red; */
+    /* background-color: sienna; */
+    display: flex;
+    padding-right: 5%;
+}
+/* style for top 3 main father div  */
+#main>div>div>div:nth-child(1){
+ display: grid;
+ grid-template-columns: 30% 50% 20%;
+    /* border: 2px solid rgb(139, 99, 99); */
+    grid-column-gap: 15px;
+
+    height: 230px;
+}
+#main>div>div>div:nth-child(1)>div{
+    /* border: 2px solid red; */
+    height: 228px;
+    
+}
+#main>div>div>div:nth-child(1)>div:nth-child(3){
+    margin-top: 60px;
+    height: 4vw;
+    background-color: rgb(189, 212, 219);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+    font-size: 1vw;
+}
+#main>div>div>div:nth-child(2){
+justify-content: right;
+gap: 10%;
+padding-right: 10%;
+align-items: center;
+}
+/* style for viwer rate  */
+#main>div>div>div:nth-child(2)>div:nth-child(2){
+    background-color: rgb(59, 58, 63);
+    padding-left: 1%;
+    padding-right: 1%;
+    color: white;
+    margin-top: -10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+}
+#main>div>div>div:nth-child(2){
+    /* background-color: rgb(40, 110, 110); */
+    display: flex;
+    justify-content: space-between;
+}
+#main>div>div>div:nth-child(2)>div:nth-child(2):hover{
+    background-color: rgb(74, 81, 87);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+#main>div>div>div>div:nth-child(2)>div{
+    display: flex;
+    justify-content: space-around;
+    
+    border: 0.5px solid rgb(218, 213, 213);
+}
+#main>div>div>div:nth-child(1)>div>img{
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+#main>div>div>div:nth-child(1)>div h2{
+    font-size: 1.7vw;
+    padding: 5px;
+    margin: 0px;
+}
+#main>div>div>div:nth-child(1)>div>div{
+    font-size: 1vw;
+    padding: 5px;
+    margin: 0px;
+}
+#main>div>div>div:nth-child(1)>div h4{
+    font-size: 1.2vw;
+    padding: 5px;
+    margin: 0px;
+}
+
+h2:hover{
+cursor: pointer;
+}
+p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+td:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+th:hover{
+    cursor: pointer;
+}
+h1{
+    margin-top: 5px;
+    font-size: 2.4vw;
+}
+h1:hover{
+cursor: pointer;
+text-decoration: underline;
+}
+@keyframes work{
+
+ 0%{
+     right: 100%;
+ }
+ 5%{
+     right: 0.1%;
+ }
+ 100%{
+     right: 0%;
+ }
+
+}
+
+@media only screen and (max-width: 480px) and (min-width: 0px){
+    #main>div>div:nth-child(1){
+        height: 36%;
+    }
+    #main>div>div>div:nth-child(1)>div{
+        /* border: 2px solid red; */
+      height: 160px;
+        width: 74vw;
+        /* background-color: azure; */
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        
+    }
+    #main>div>div>div:nth-child(1)>div>div{
+        width: 70%;
+        padding: 0px;
+    }
+    #main>div>div>div:nth-child(1)>div>div th,td{
+        /* border: 2px solid rebeccapurple; */
+        font-size: 2.5vw;
+    }
+    #main>div>div>div:nth-child(1)>div h2{
+        margin: 3px;
+        padding: 3px;
+        font-size: 3vw;
+        
+    }
+    #main>div>div>div:nth-child(1)>div h4{
+        margin: 0px;
+        padding: 0px;
+        font-size: 2.3vw;
+    }
+
+    #main>div>div:nth-child(1)>div:nth-child(1){
+        /* border: 2px solid red; */
+        height: 160px;
+       width: 94%;
+        
+    }
+    #main>div>div:nth-child(2)>div:nth-child(1){
+      grid-area: a;
+      /* border: 2px solid black; */
+      height: 60px;
+      padding-left: 17px;
+      width: 50px;
+    }
+    #main>div>div:nth-child(2)>div:nth-child(2){
+       
+      grid-area: b;
+      /* width: 87vw; */
+      width: 90%;
+      height: 230px;
+      /* margin-left: -40px; */
+      /* border: 2px solid rebeccapurple; */
+      
+    }
+   
+    #main>div>div:nth-child(2)>div:nth-child(3){
+/* border: 2px solid black; */
+       grid-area: c;
+       
+    }
+    #main>div>div:nth-child(2){
+        padding-left: 0px;
+       display: grid;
+      grid-template-areas: "b b b b"
+                           "a . . c" ;
+
+    }
+
+    #main>div>div:nth-child(2)>div:nth-child(2)>img{
+         width: 123%;
+        height: 100%;
+        margin-left: 0px;
+        border: 0px;
+        padding: 0px;
+        background-color: transparent;
+        /* animation: 2s work ease infinite; */
+        
+       /* border: 9px solid red; */
+       /* right: 0%;
+        position: relative; 
+       transition: 2s ease-in ; */
+        
+       
+    }
+    #main p{
+        /* border: 2px solid red; */
+        color: rgb(235, 98, 34);
+        font-size: 3vw;
+    }
+
+
+    #main>div>div>div:nth-child(1)>div:nth-child(1){
+       display: none;
+    }
+
+    #main>div>div>div:nth-child(1)>div:nth-child(3){
+       display: none;
+    }
+    h1{
+        margin-top: 5px;
+        font-size: 5vw;
+    }
+    #main>div>div>div:nth-child(2)>div:nth-child(2){
+        font-size: 3vw;
+        height: 9vw;
+        margin-top: 3px;
+    }
+
+}

@@ -1,0 +1,666 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+}
+body{
+    margin: 0px;
+}
+#container{
+    /* border: 2px solid red; */
+    width: 100%;
+    /* height: 2000px; */
+    background-color: rgb(244, 244, 244);
+}
+#main{
+    /* border: 2px solid red; */
+    padding-left: 10%;
+    padding-right: 10%;
+    /* width: 100%; */
+    display: flex;
+    flex-flow: column;
+    gap: 25px;
+   
+}
+#main>div{
+    /* border: 2px solid red; */
+    height: 250px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 2px;
+}
+#main>div h2{
+    font-size: 3vmin;
+/* color: blue; */
+}
+#main>div>div:nth-child(1){
+    /* color: blue; */
+    font-size: 1.3vw;
+}
+#main>div>div:nth-child(1){
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    align-items: center;
+}
+#main>div>div:nth-child(2){
+display: flex;
+
+/* border: 2px solid grey; */
+justify-content: center;
+gap: 3%;
+align-items: center;
+padding: 0% 1% 1% 2%;
+height: 160px;
+}
+#main>div>div:nth-child(2)>div{
+    width: 100%;
+    height: 100%;
+    
+}
+#main>div>div:nth-child(2)>div:nth-child(1){
+    height: 200px;
+    width: 50%;
+    color: blue;
+    
+}
+#main>div>div:nth-child(2)>div:nth-child(2){
+height: 180px;
+/* border: 2px solid black; */
+
+
+}
+#main>div>div:nth-child(2)>div:nth-child(2) h3{
+    /* color: blue; */
+    font-size: 2.6vmin;
+}
+#main>div>div:nth-child(2)>div:nth-child(2) p{
+ font-size: 2vmin;
+ 
+}
+#main>div>div:nth-child(2)>div:nth-child(2)>div>h1{
+font-size:2.1vw ;
+
+}
+#main>div>div:nth-child(2)>div:nth-child(2)>div{
+    display: flex;
+   
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 6%;
+    border-bottom: 0.6px solid grey;
+    height: 50%;
+    
+}
+
+#main>div>div:nth-child(2)>div:nth-child(2)>div>h3{
+background-color: rgb(63, 54, 54);
+padding: 2% 4% 2% 4% ;
+color: rgb(252, 245, 245);
+font-weight: bold;
+font-family: sans-serif;
+}
+#main>div>div:nth-child(2)>div:nth-child(2)>div>h3:hover{
+    background-color: rgb(112, 104, 104);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+#main>div>div:nth-child(2)>div:nth-child(2)>div>h3:active{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+#main>div>div:nth-child(2)>div:nth-child(1)>img{
+    /* border: 2px solid red; */
+width: 100%;
+margin-top: 20px;
+height:170px;
+}
+#main>div>div:nth-child(2)>div:nth-child(1)>img:hover{
+    transition: 0.3s ease-in;
+    transform: scale(1.1,1.1);
+}
+#main p{
+   color: rgb(224, 79, 63);
+   margin-top: 3px;
+}
+p:hover{
+    text-decoration: underline;
+    
+    cursor: pointer;
+}
+
+#filter{
+    display: flex;
+    border: 1px solid rgb(184, 169, 169);
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 1%; */
+    position: sticky;
+    top: 0%;
+    z-index: 200;
+    background-color: white;
+    padding: 3px;
+}
+#for_filter{
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: center;
+    
+    align-items: center;
+    gap: 20px;
+}
+#for_guest{
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    
+   
+    /* position: relative; */
+
+}
+#for_guest>input{
+ 
+  width: 20%;
+  outline: none;
+  border: 0.1px solid grey;
+ 
+
+}
+#gest_per_room{
+    /* border: 2px solid red; */
+    text-align: center;
+    width: 40%;
+    /* height: 60px; */
+   
+}
+#gest_per_room>p{
+    margin-top: 3px;
+    margin-bottom: 6px;
+    border-bottom: 1px solid gray;
+}
+
+
+
+/* ------------------------------------------nikhil----------------------------------- */
+#options{
+    display: flex;
+    margin: 2%;
+}
+#cardsection{
+margin-left: 10%;
+width: 80%;
+/* border: 1px solid rebeccapurple; */
+box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+#proceed{
+  height: 45px;
+  background-color: white;
+  margin: 3%;
+}
+#card_number,#expiry_month,#expiry_year{
+font-size: larger;
+width: 90%;
+height: 30px;
+}
+#proceeddiv{
+display: flex;
+}
+#proceedpay{
+/* border: 1px solid red; */
+padding-top: 25px;
+}
+/* hoteldetailscss--------- */
+h2,h1{
+font-family:sans-serif;
+
+}
+hr{
+background-color: gainsboro;
+}
+#mapicon,#phoneicon,#hearticon,#checkicon,#foodicon,#spaicon,#weighticon,#wifiicon,#wallicon{
+width: 20px;
+height: 18px;
+margin-right: 10px;
+}
+#ratingicon{
+width: 40px;
+height: 40px;
+/* border: 1px solid red; */
+margin-top: 8px ;
+}
+#hotelrating{
+/* border: 1px solid red; */
+padding-top: 19px;
+margin: 0px;
+margin-left: 2px;
+
+}
+#abouthotel,#highlights{
+display: flex;
+
+margin: 2px;
+}
+#abouthotel>p,#highlights>p{
+margin-right: 10px;
+
+/* border: 1px solid brown; */
+}
+#hoteldetails{
+/* border: 1px solid red; */
+background-color: gainsboro;
+width: 100%;
+
+
+
+}
+img{
+color:gray;
+}
+#hotelname,#hoteladdress,#exclusive{
+margin-left: 20%;
+}
+#hotelrating,#hotelreview,#hotelrating{
+margin-right: 15px;
+
+}
+/* -----reviewcss */
+#review{
+margin-left: 10%;
+/* border: 1px solid purple; */
+width: 80%;
+box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+#roomimg{
+width: 700px;
+height: 300px;
+
+}
+#reviewsub{
+display: flex;
+/* border: 1px solid brown; */
+flex-wrap: wrap;
+}
+#roomdetails{
+margin-left: 2%;
+}
+#edit>a{
+color: brown;
+text-decoration: none;
+}
+#edit>a:hover{
+cursor: pointer;
+text-decoration: underline;
+color: rgb(236, 22, 22);
+}
+/* ------fixnavcss------ */
+#fixnav{
+box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+width: 100%
+
+
+}
+#justdiv{
+margin-left: 10%;
+display: flex;
+margin: 1px solid red;
+justify-content: space-between;
+width: 80%;
+flex-wrap: wrap;
+}
+#flex{
+display:flex
+}
+#wallicon{
+/* border: 1px solid pink; */
+padding-top: 15px;
+}
+.vertical{
+height: 60px;
+border: 1px solid gray;
+margin-top: 10px;
+background-color: gray;
+}
+
+
+
+
+/* --------------------------------------------------------movendhan _____________________________________ */
+
+
+#foot_main{
+    /* border: 2px solid red; */
+    background-color: white;
+    margin-top: 40px;
+    padding-top: 5%;
+    }
+    .foot-column{
+        margin:auto;
+        width:75%;
+        /* border: 1px solid black; */
+     }
+    #foot-1img{
+       width:15%;
+       height:20%;
+       
+    }
+    .flex{
+       display: flex;
+       /* cursor: grab; */
+     
+       /* border-top: 1px solid black; */
+    }
+    .box1{
+       width:20%;
+    /*          
+       box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; */
+    }
+    .box2{
+       width:75%;
+     
+    }
+    .boximg1{
+     display: flex;
+    
+    
+    }
+    .boximg1 img{
+       width:7%;
+      margin:auto;
+      border-radius: 10px;
+    
+    }
+    .height{
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+    }
+    p{
+       margin-left: 15px;
+    }
+    #hori{
+     border-left: 1px solid rgb(184, 179, 179);
+    }
+    .space{
+     justify-content: space-between; 
+     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    }
+    #size{
+      width:25px;
+    }
+    .ul{
+      margin:0%;
+    }
+    .ul> li:hover{
+     text-decoration: underline;
+     text-decoration-color: black;
+     text-decoration-thickness: 1px solid black;
+    }
+    .ul>li{
+     list-style-type:none;
+     cursor: pointer;
+    
+    }h1{
+     text-align: center;
+    }
+    #foot_main select{
+     width:100%;
+     height: 80px;
+     border:0px;
+     gap: 10px;
+     font-size:25px;
+     border: none;
+     border-bottom: 1px solid rgb(17, 17, 17);
+    
+     
+    }
+    #foot_main select>option{
+        border: 0px solid white;
+    }
+   
+    #last{
+     display: flex;
+     justify-content:space-between;
+    }
+    #last img{
+      width:15px;
+      cursor: pointer;
+    }
+    #globe{
+      display: flex;
+      justify-content:space-between;
+      cursor: pointer;
+    }
+    #globe p{
+      margin-top:10px;
+    }
+    select::-webkit-scrollbar{
+     /* display: none; */
+     width: 0px;
+     
+    }
+    .dino-select{
+      cursor:pointer;
+    }
+    #st_container{
+      border:1px solid rgb(190, 181, 181);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 120px;
+      padding-right: 5%;
+    
+    }
+    
+    #st_container> button{
+    height: 55px;
+    width: 17%;
+      border: 2px solid black;
+      background-color: white;
+      font-size: 18px;
+      font-weight: 900;
+      
+    
+    }
+    #st_container>button:hover {
+    background-color: black;
+    color: white;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+    
+    }
+
+
+    /* ------------------------movendhan ---header------------------------------ */
+
+
+    #navbar{
+      top: 0px;
+        /* position:fixed;  */
+        
+        
+        width: 100%;
+        height: 50px;
+       
+        display: flex;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+        /* border: 2px solid red; */
+        justify-content: space-between;
+       
+        
+    }
+    .flex{
+        display: flex;
+        /* border: 2px solid red; */
+        align-items: center;
+      
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+    
+    
+    
+    .info{
+        /* border: 2px solid rgb(20, 39, 39); */
+        width: 100%;
+        height: 100%;
+        
+        display: flex;
+        gap: 20px;
+        cursor: pointer;
+        justify-content: right;
+        padding-right: 5%;
+       
+      
+       
+    }
+       
+#menu{
+    color: black;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+#menu:hover{
+text-decoration: underline;
+color: blueviolet;
+}
+
+
+  
+
+
+  @media only screen and (max-width: 480px) and (min-width: 0px){
+
+    #hoteldetails{
+      
+        margin-top: -3px;
+        
+        }
+        #main{
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+        #main>div{
+            /* border: 2px solid black; */
+            height: 300px;
+
+        }
+        #main>div>div:nth-child(2)>div:nth-child(2)>div>h1{
+            font-size:4.1vw ;
+            
+            }
+        #main>div>div:nth-child(2){
+            display: flex;
+            flex-flow: column;
+            /* border: 2px solid red; */
+            height: 80%;
+            padding-left: 3px;
+        }
+        #main>div>div:nth-child(1){
+            /* color: blue; */
+            font-size: 2.3vw;
+        }
+        #main>div>div:nth-child(2)>div:nth-child(1){
+            width: 100%;
+            height: 50%;
+        }
+        #main>div>div:nth-child(2)>div:nth-child(2){
+            height: 120px;
+        }
+       
+        #main>div>div:nth-child(2)>div:nth-child(1)>img{
+            /* border: 2px solid red; */
+        width: 100%;
+        margin-top: 0px;
+      height: 100%;
+        /* width: 400px; */
+        margin-left: 0px;
+        }
+        .info>div>p{
+            display: none;
+        }
+        .info>div>img{
+            width: 7vw;
+            height: 8vw;
+        }
+        .info>div>#logo_m{
+            width: 20vw;
+            height: 7vh;
+        }
+        #filter>#for_guest{
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        #highlights p{
+         font-size: 3vw;
+        }
+        #highlights p>img{
+            width: 4vw;
+            height: 4;
+           }
+        #gest_per_room{
+            font-size: 3vw;
+        }
+        #gest_per_room lable{
+            font-size: 3vw;
+        }
+        #room,#day{
+            width: 1vw;
+        }
+        #for_filter{
+            display: none;
+        }
+        #hotelname{
+           
+            font-size: 4.5vw;
+            margin: 0px;
+            padding: 0px;
+            margin-left: 15px;
+        }
+        #abouthotel{
+            display: none;
+        }
+        #exclusive{
+            display: none;
+        }
+        #last{
+            /* border: 2px solid rebeccapurple; */
+            display: flex;
+          flex-wrap: wrap;
+          height: auto;
+          justify-content: left;
+          align-content: center;
+          width: 100%;
+          }
+          #st_container{
+            display: flex;
+            flex-flow: column;
+            height: 200px;
+            width: 90%;
+            text-align: center;
+        }
+        #st_container>h2{
+        font-size: 17px;
+        }
+        #st_container>button{
+        width: 140px;
+        height: 100px;
+        display: flex;
+        margin: 0px;
+        padding-right: 0px;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        font-size: 17px;
+        text-align: center;
+        margin-bottom: 3px;
+        }
+        
+
+  }

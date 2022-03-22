@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otp Verification</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@500;800&family=Mukta:wght@200&family=Noto+Sans&family=Outfit:wght@100&family=Poppins:wght@300&family=Source+Sans+Pro:wght@300&family=Zen+Kurenaido&display=swap"
+        rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="https://cache.marriott.com/Images/Mobile/MC_Logos/MarriottApple57x57.png
+        " hreflang="en-in" />
+    <style>
+        *{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+}
+        #otp{
+margin-left: 40%;
+margin-top: 150px;
+
+width: 350px;
+height: 350px;
+}
+#enter{
+    margin-top: 25px;
+}
+
+
+#navbar{
+   top: 0%;
+        position:fixed; 
+        
+        width: 100%;
+        height: 50px;
+       
+        display: flex;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+        /* border: 2px solid red; */
+        justify-content: space-between;
+       
+        
+    }
+    .flex{
+        display: flex;
+        /* border: 2px solid red; */
+        align-items: center;
+      
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+    
+    
+    
+    .info{
+        /* border: 2px solid rgb(20, 39, 39); */
+        width: 100%;
+        height: 100%;
+        
+        display: flex;
+        gap: 20px;
+        cursor: pointer;
+        justify-content: right;
+        padding-right: 5%;
+       
+      
+       
+    }
+       
+#menu{
+    color: black;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+#menu:hover{
+text-decoration: underline;
+color: blueviolet;
+}
+    </style>
+
+</head>
+<body>
+    <div id="navbar">
+        <a id="menu" href="/index.html">Home</a>
+        <!-- logo box -->
+        
+    
+        <!-- info box like sigin ,help other -->
+        <div class="info">
+            <div class="flex"><img  src="/images/1st.png" alt="" width="30px" height="30px">English</div>
+            <div class="flex"><img  src="/images/2nd.png" alt="" width="30px" height="30px"> Help</div>
+            <div class="flex"><img  src="/images/3rd.png" alt="" width="30px" height="30px"> My Trips</div>
+            <div id="user" class="flex"><img src="/images/8th.png" alt="" width="39px" height="37px" >Login </div>
+            <div ><img src="/images/2nd logo.png" alt=""  width="90px" height="49px"  ></div>
+        </div>
+    </div>
+<!-- --------------------------------navbar------------------- -->
+
+   <div id="otp"> <h2 id="enter">Please Enter Otp</h2>
+    <input type="number" placeholder="OTP" id="number">
+    <button id="submit" onclick="verifyotp()">Submit</button></div>
+</body>
+</html>
+<script>
+function verifyotp(){
+    var value=document.getElementById("number").value;
+    if(value==123456){
+        alert("Verifying OTP");
+        setTimeout(()=>{
+            window.location.href="confirmation.html";
+        })
+    }else{
+        alert("Invalid OTP");
+    }
+}
+
+
+let [userName1]=JSON.parse(localStorage.getItem("UserData"))
+if(userName1 !=null){
+    document.getElementById("user").textContent=(userName1.charAt(0).toUpperCase() + userName1.slice(1))
+}else{
+  document.getElementById("user").textContent="Signup"
+}
+</script>

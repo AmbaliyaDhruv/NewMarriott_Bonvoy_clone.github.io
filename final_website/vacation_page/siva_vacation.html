@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You choice</title>
+    <style>
+        *{
+            font-family: sans-serif;
+           
+            padding: 0px;
+        }
+        #container{
+            /* border: 1px solid black; */
+            display: grid;
+            width: 90%;
+            margin:auto;
+            grid-template-columns: repeat(4, 20%);
+            justify-content: space-between;
+            grid-row-gap:50px;
+        }
+        .main_img{
+            width:100%;
+        }
+        img{
+            cursor: pointer;
+        }
+        /* #img{
+            /* display: block; */
+    /* height: 100%;
+    width: 100%; */
+    /* min-height: 14rem;
+    object-fit: cover;
+    object-position: center; */
+    /* transition: transform 1s ease-in-out; */
+    /* transition-property: tra; */
+    /* transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s; */
+        /* }  */
+    </style>
+</head>
+<body>
+    <!-- <button id="button" >Submit to get hotels</button> -->
+    <div>
+        <img class = "main_img" src="https://i.ibb.co/0QGXfJW/explore-your-destinations.png" alt="">\
+
+    </div>
+    <div id="container"></div>
+</body>
+</html>
+<script>
+
+    
+      //http://127.0.0.1:5500/index.html //mongodb://127.0.0.1:27017
+      showresult()
+function showresult(){
+    // console.log(1);
+
+    async function getdetails(){
+        try{
+            console.log("one");
+            let fetchedDetails=await  fetch("https://secret-inlet-30981.herokuapp.com/users/vacation");  
+            let data=await fetchedDetails.json();
+            console.log("hoteldetails:",data);
+            appenddata(data);
+        }
+        catch(e){
+            console.log(e.message);
+        }
+    }
+    getdetails();
+}
+
+function appenddata(data){
+    data.forEach((el)=>{
+        let div = document.createElement("div");
+        div.style.lineHeight = "15px";
+        let p=document.createElement("h2");
+        p.textContent=el.vacation_place;
+        let image= document.createElement("img");
+        image.id = "img"
+        image.src=el.vacation_img;
+        let p1=document.createElement("h3");
+        p1.textContent=el.vacation_feature;
+        let p2=document.createElement("p");
+        p2.textContent="₹ " + el.vacation_price;
+        div.append(image,p,p1,p2)
+        let container=document.querySelector("#container");
+        container.append(div);
+
+    })
+}
+
+</script>
+<!-- display: block;
+    height: 100%;
+    width: 100%;
+    min-height: 14rem;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 1s ease-in-out;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s; -->
