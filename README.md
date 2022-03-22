@@ -1,6 +1,6 @@
 # NewMarriott_Bonvoy_clone.github.io
-this project with backend 
-whole code in the "final_website" folder
+- this project with backend <br/>
+- Whole code in the "final_website" folder
 
 ## About
 Marriott Bonvoy is a hotel, resort, and accommodation booking website. This was a collaborative project built by 5 members of the team and executed in 5 days.
